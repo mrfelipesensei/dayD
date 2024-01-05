@@ -13,10 +13,10 @@ def resultado():
         resultado = "Vá treinar em jejum"
     elif passo1 == "Não":
         passo2 = request.form['passo2']
-        if passo2 == "8h":
+        if passo2 == "7h":
             resultado = "Tome café da manhã!"
         else:
-            resultado = "Horário desconhecido!"
+            resultado = "Já está muito tarde!"
     else:
         resultado = "Resposta inválida!"
     return render_template('resultado.html', resultado=resultado)
