@@ -9,9 +9,9 @@ def index():
 @app.route('/resultado', methods=['POST'])
 def resultado():
     passo1 = request.form['passo1']
-    if passo1 == "Sim":
+    if passo1 == "sim":
         resultado = "Vá treinar em jejum"
-    elif passo1 == "Não":
+    elif passo1 == "não":
         passo2 = request.form['passo2']
         if passo2 == "7h":
             resultado = "Tome café da manhã!"
