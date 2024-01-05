@@ -37,3 +37,12 @@ elif passo1 == "não":
         print("Tome café da manhã!")
     else:
         print("Está muito tarde, siga com outros afazeres do dia.")
+
+    print()
+    passo4 =  validar_resposta("O que você fará agora? ", ["estudar", "trabalhar", "afazeres domésticos"])
+    if passo4 == "estudar":
+        print("Estude sem distrações até o almoço!")
+    elif passo4 == "trabalhar":
+        print("Trabalhe bem até o almoço!")
+    elif passo4 == "afazeres domésticos":
+        print("Mãos à obra até o almoço!")
