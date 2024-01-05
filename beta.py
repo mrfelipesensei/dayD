@@ -28,6 +28,17 @@ if passo1 == "sim":
         print("Trabalhe bem até o almoço!")
     elif passo4 == "afazeres domésticos":
         print("Mãos à obra até o almoço!")
+    
+    print()
+    passo5 = validar_resposta("O que fará após o almoço? ", ["descansar", "trabalhar", "estudar", "afazeres domésticos"])
+    if passo5 == "descansar":
+        print("Descanse por 40min.")
+    elif passo5 == "trabalhar":
+        print("Continue a labuta!")
+    elif passo5 == "estudar":
+        print("Estude sem distrações até o lanche.")
+    elif passo5 == "afazeres domésticos":
+        print("Mãos à obra até o lanche.")
 
 elif passo1 == "não":
     passo2 = validar_resposta("Que horas você acordou? ", ["6h", "7h", "8h", "outro"])
@@ -46,3 +57,14 @@ elif passo1 == "não":
         print("Trabalhe bem até o almoço!")
     elif passo4 == "afazeres domésticos":
         print("Mãos à obra até o almoço!")
+
+    print()
+    passo5 = validar_resposta("O que fará após o almoço? ", ["descansar", "trabalhar", "estudar", "afazeres domésticos"])
+    if passo5 == "descansar":
+        print("Descanse por 40min.")
+    elif passo5 == "trabalhar":
+        print("Continue a labuta!")
+    elif passo5 == "estudar":
+        print("Estude sem distrações até o lanche.")
+    elif passo5 == "afazeres domésticos":
+        print("Mãos à obra até o lanche.")
