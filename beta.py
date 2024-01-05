@@ -18,7 +18,17 @@ if passo1 == "sim":
     elif passo3 == "c":
         print("Quadriceps, Femural, Panturrilha, Abdomen")
 
-    print("Após o treino, tome café da manhã e suplemente.")
+    print()
+    print("Após o treino, tome uma ducha, café da manhã e suplemente.")
+    print()
+    passo4 = validar_resposta("O que você fará depois do treino? ", ["estudar", "trabalhar", "afazeres domésticos"])
+    if passo4 == "estudar":
+        print("Estude sem distrações até o almoço!")
+    elif passo4 == "trabalhar":
+        print("Trabalhe bem até o almoço!")
+    elif passo4 == "afazeres domésticos":
+        print("Mãos à obra até o almoço!")
+
 elif passo1 == "não":
     passo2 = validar_resposta("Que horas você acordou? ", ["6h", "7h", "8h", "outro"])
     if passo2 in ["6h", "7h"]:
